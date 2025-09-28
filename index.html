@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mr.Budget Calc.</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+  <!-- Link your own CSS file here -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="bg">
+        <!-- ====== Top Section ====== -->
+        <header class="top-section">
+            <h2 class="top-text">Mr.Budget Calc.</h2>
+            <h1 class="top-text-section">Monthly Budget Calculator</h1>
+
+            <!-- Income Input -->
+            <div class="income-section">
+            <label for="income">Monthly Income</label>
+            <input id="income" type="number" placeholder="Enter income" class="income-input"/>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="buttons-section">
+            <button id="add-expense" class="four-btns">+ Add Expense</button>
+            <button id="clear-data" class="four-btns">Clear All</button>
+            <button id="export-csv" class="four-btns">Save</button>
+            <!-- <button id="export-json" class="four-btns">Export JSON</button> -->
+            
+            </div>
+
+            <!-- Expense List -->
+            <div id="expenses" class="expenses-section">
+            <!-- Expense rows will be inserted here dynamically -->
+            </div>
+
+            <!-- Totals -->
+            <div class="totals-section">
+            <div>
+                <span>Total Expenses:</span>
+                <span id="total">0.00</span>
+            </div>
+            <div>
+                <span>Remaining Balance:</span>
+                <span id="balance">0.00</span>
+            </div>
+            </div>
+        </header>
+
+        <!-- ====== Pie Chart Section ====== -->
+        <section class="chart-section">
+            <h2 class="mid-text">Spending Breakdown</h2>
+            <canvas id="chart" width="420" height="420"></canvas>
+        </section>
+
+        <!-- ====== Footer ====== -->
+        <footer class="footer">
+            <p class="mid-text">©2025 All Rights Are Reserved</p>
+        </footer>
+    </did>
+  <!-- Link your own JavaScript here -->
+  <script src="script.js"></script>
+</body>
+</html>
